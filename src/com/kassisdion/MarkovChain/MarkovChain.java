@@ -7,7 +7,7 @@ public class MarkovChain {
         mProbabilityTable = probabilityTable;
     }
 
-    public String getWord() {
+    public String generateWord() {
         return "";
     }
 }

@@ -19,7 +19,7 @@ public class Main {
             probabilityTableGenerator.printReadableTable();
 
             MarkovChain markovChain = new MarkovChain(probabilityTableGenerator.getTable());
-            markovChain.getWord();
+            markovChain.generateWord();
 
         } catch (FileNotFoundException e) {
             System.out.println("Invalid or no input file");

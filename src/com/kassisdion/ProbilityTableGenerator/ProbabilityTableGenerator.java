@@ -4,6 +4,8 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.util.Scanner;
 
+//TODO calculate probability of being first or last letter
+
 public class ProbabilityTableGenerator {
 
     private final char[] mTokens; //Simple token representation {"a, b, c, d, e, f, ...}
