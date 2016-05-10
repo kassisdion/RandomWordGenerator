@@ -1,34 +1,32 @@
 package com.kassisdion.MarkovChain;
 
-
-import java.util.Random;
+import java.util.List;
 
 public class MarkovChain {
     private final double[][] mProbabilityTable;
-    private final char[] mTokens;
-    private final Random mRandom;
+    private final List<Character> mTokens;
 
-    public MarkovChain(double[][] probabilityTable, final char[] tokens) {
+    public MarkovChain(double[][] probabilityTable, final List<Character> tokens) {
         mProbabilityTable = probabilityTable;
         mTokens = tokens;
-        mRandom = new Random();
     }
 
-    public String generateWord(final int size) {
-        int state = mRandom.nextInt(mTokens.length);
+    public String generateWord() {
+        int state = mTokens.indexOf('\0');
 
         String word = "";
 
         //run Markov chain
-        while (word.length() < size) {
+        while (word.length() == 0 || word.charAt(word.length() - 1) != '\0') {
             double r = Math.random();
             double sum = 0.0;
 
-            for (int j=0; j < mProbabilityTable[state].length; j++) {
+            // determine next state
+            for (int j=0; j < mTokens.size(); j++) {
                 sum += mProbabilityTable[state][j];
-                if (r <= sum) {
-                    word += mTokens[j];
+                if (r < sum) {
                     state = j;
+                    word += mTokens.get(j);
                     break;
                 }
             }
