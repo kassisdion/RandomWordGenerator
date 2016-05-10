@@ -32,7 +32,7 @@ Where inputFileName is a path to a file containing a list of word and tokens is 
 * Syntax: Each word should be on a separated line
 * Representativenes: Your list should be representative (Your data should include rare letter combinations, but these should be infrequent).
 
-It will give you an input which looks like this : 
+It will give you an output like this : 
 ![output](https://github.com/kassisdion/RandomWordGenerator/blob/master/media/output/output.png?raw=true)
 
 ### 2) Generating the random word
