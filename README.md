@@ -36,5 +36,5 @@ markovChain.generateWord();
 
 * Build an average word length of the list.
 * Prevent long repetition of a single letter.
-* Take letter position into consideration (the first and the last letter).
+* Use 2 char instead of one when generating a word (ie: generate probability table on 2 char)
 
