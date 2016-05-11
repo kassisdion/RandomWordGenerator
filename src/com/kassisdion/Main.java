@@ -15,8 +15,8 @@ public class Main {
             String inputFileName = "media/testInput/COMPOUND.TXT";
             ArrayList<Character> tokens = new ArrayList<>(Arrays.asList(
                     'a', 'b', 'c', 'd', 'e', 'f', 'g', 'h', 'i', 'j', 'k', 'l', 'm', 'n', 'o', 'p', 'q', 'r', 's', 't', 'u', 'v', 'w', 'x', 'y', 'z',
-                    'à', 'è', 'ù', 'é','ê','â', 'î', 'û', 'ô', 'ï', 'ë', 'ü', 'ö',
-                    'ç','-'));
+                    'à', 'è', 'ù', 'é', 'ê', 'â', 'î', 'û', 'ô', 'ï', 'ë', 'ü', 'ö',
+                    'ç', '-'));
 
             ProbabilityTableGenerator probabilityTableGenerator = new ProbabilityTableGenerator(inputFileName, tokens);
             probabilityTableGenerator.setVerbose(false);
@@ -25,7 +25,7 @@ public class Main {
             probabilityTableGenerator.printReadableTable();
 
             MarkovChain markovChain = new MarkovChain(probabilityTableGenerator.getTable(), tokens);
-            for (int i=0; i < 10; i++) {
+            for (int i = 0; i < 10; i++) {
                 System.out.println("word :" + markovChain.generateWord());
             }
 

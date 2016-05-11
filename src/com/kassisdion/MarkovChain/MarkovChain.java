@@ -22,7 +22,7 @@ public class MarkovChain {
             double sum = 0.0;
 
             // determine next state
-            for (int j=0; j < mTokens.size(); j++) {
+            for (int j = 0; j < mTokens.size(); j++) {
                 sum += mProbabilityTable[state][j];
                 if (r < sum) {
                     state = j;

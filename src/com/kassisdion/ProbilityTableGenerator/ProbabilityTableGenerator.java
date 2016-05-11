@@ -2,17 +2,15 @@ package com.kassisdion.ProbilityTableGenerator;
 
 import java.io.File;
 import java.io.FileNotFoundException;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Scanner;
 
 public class ProbabilityTableGenerator {
 
     private final ArrayList<Character> mTokens; //Simple token representation {"a, b, c, d, e, f, ...}
-    private double[][] mTable; //Token representation in 2D : mTable[i][j] is the probability that mTokens[i] is follow by mTokens[j]
     private final Scanner mIn; //Input
     private final int N; //mTable length
+    private double[][] mTable; //Token representation in 2D : mTable[i][j] is the probability that mTokens[i] is follow by mTokens[j]
     private Boolean mVerbose; //Boolean for displaying log
 
     /*
