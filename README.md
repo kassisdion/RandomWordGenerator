@@ -1,4 +1,5 @@
 # RandomWordGenerator
+[![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
 
 ## What is RandomWordGenerator ?
 A Java program that generates random names using Markov chain.
