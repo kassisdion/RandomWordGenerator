@@ -1,5 +1,6 @@
 # RandomWordGenerator
 [![MIT licensed](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/hyperium/hyper/master/LICENSE)
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2a7a51866e604a98a5905aaad559a4d5)](https://www.codacy.com/app/kassisdion/RandomWordGenerator?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=kassisdion/RandomWordGenerator&amp;utm_campaign=Badge_Grade)
 
 ## What is RandomWordGenerator ?
 A Java program that generates random names using Markov chain.
